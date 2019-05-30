@@ -1,0 +1,35 @@
+apiVersion: v1
+data:
+  ca.crt: |
+    -----BEGIN CERTIFICATE-----
+    MIIDCzCCAfOgAwIBAgIQCMUV3DSAXz/z9AII7+sJdzANBgkqhkiG9w0BAQsFADAv
+    MS0wKwYDVQQDEyQxZjkyYTgzMC01OGNlLTRmNDQtYjMxMS1jZWNjNzM0NDU2MTIw
+    HhcNMTkwNTMwMDQxNzQ1WhcNMjQwNTI4MDUxNzQ1WjAvMS0wKwYDVQQDEyQxZjky
+    YTgzMC01OGNlLTRmNDQtYjMxMS1jZWNjNzM0NDU2MTIwggEiMA0GCSqGSIb3DQEB
+    AQUAA4IBDwAwggEKAoIBAQCwuuNKgT3bN03IFVJtmzm980TorRg1wR6yFRNvQxFh
+    48S3+t6YO1klyTRA0bsnEvnlIOCOh6KankffGWRWXizcaQ4dhPYwNy5THl3ScqEq
+    rrAv1gd0DKsyD3+7OyaHiiMDDu7GuczaHzgU2zG8Aq0mF8sMd1hX1Xeg8g+NVzRP
+    fHzuivPydvKaIRmJyAnQDngEgaQzKa7BmCtTix0JLiSZMBDt5UjeOBGI/rBKp6+X
+    Uu8EHxLfS08WJMW8LgWYtvV64PPEb5L9toqSenuIlt1//Splmh7bKcrm5ieNLkH7
+    XKEwOXe0ojsuqgsCz8Y5kwDBn3hSVL8RyplCvP6qtKhBAgMBAAGjIzAhMA4GA1Ud
+    DwEB/wQEAwICBDAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQAL
+    x93TNFW34P8HHABBQArTPYlo1x//02h++W2r+3JG6MoCum9NEoDSI0RE1CoMDxEA
+    HiF9hObgVVOUdz6S2cIqpR575MOACmg1cpWk334kn6bwS/S3ZYmR0XPQ3G0IqsPg
+    nXBq8plWZNBh+cHusgWMz3F+feB6yS9LJEZ9Xn4g9h/e4gO8+/62ze9gJhRaOUJd
+    LLAmzqp8EyqigpyvacdyVMlEDY7aH5WPRnxfBccTuf55JrEyVTdmcW4Z6xnbi07l
+    eNgPYod4tS6pRneSjD94TgW5c1FaoTbSi8Ca8saB1XBG6PQeKXVhH57X0zeqj0lF
+    jR3+m83INnZ1bw9kTuLw
+    -----END CERTIFICATE-----
+  clusterName: jx-cicd-demo
+  jx-install-version: 2.0.189
+  kubeProvider: gke
+  projectID: vcloud-csr
+  region: ""
+  secretsLocation: vault
+  server: https://35.235.126.85
+  systemVaultName: jx-vault-jx-cicd-demo
+  zone: us-west2-a
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: jx-install-config
